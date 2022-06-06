@@ -1,0 +1,22 @@
+<!--9. Escribe un programa que pida al usuario el radio de un círculo y que calcule y
+muestre el área y el perímetro (el área de un círculo es PI por radio cuadrado y el
+perímetro es 2 por radio por PI). PI es = 3.141593-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let radio = parseInt (window.prompt("Introduzca el radio "))
+        const PI = 3.141593
+        let area = PI * (radio **2)
+        let perímetro = 2 * radio * PI
+        console.log ("Área: "+ area)
+        console.log ("Perímetro: " + perímetro)
+    </script>
+</body>
+</html>
