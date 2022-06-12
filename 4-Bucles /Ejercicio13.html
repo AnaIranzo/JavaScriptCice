@@ -1,0 +1,34 @@
+<!--13. Se desea conocer el lucky number (número de la suerte) de cualquier persona. El
+número de la suerte se consigue reduciendo la fecha de nacimiento a un número de un
+solo dígito. Por ejemplo, la fecha de nacimiento de Emma es la siguiente: 16-08-1973
+16+8+1973=1997 1+9+9+7=26 2+6=8. El número de la suerte de Emma será el 8.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let fecha = window.prompt("Introduce tu fecha de nacimiento (dd-mm-aaaa) para conocer tu lucky number")
+let dia = fecha.substring(0,2)
+console.log(dia)
+let mes = fecha.substring(3,5)
+console.log(mes)
+let año = fecha.substring(6,10)
+console.log(año)
+let lucky1 = parseInt(dia) + parseInt(mes) + parseInt(año)
+console.log(lucky1)
+let a = toString(lucky1.substring(0,1))
+let b = toString(lucky1.substring(1,2))
+let c = toString(lucky1.substring(2,3))
+let d = toString(lucky1.substring(3,4))
+console.log(a,b,c,d)
+
+
+
+    </script>
+</body>
+</html>

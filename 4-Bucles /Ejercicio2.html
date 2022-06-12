@@ -1,0 +1,22 @@
+<!--2. Crear un programa que muestre el valor de sumar todos los números desde 1 hasta el
+número que introduzca el usuario. Por ejemplo si introduce el 8 debería mostrar 36 (1 +
+2+ 3+ 4+ 5+ 6+ 7+ 8).-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let numero = parseInt(window.prompt("Introduzca un número"))
+let suma = 0
+for (let i = 1; i <= numero; i++) {
+    suma += i
+    console.log(suma)
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--10. Escribe un programa que pida dos valores al usuario y
+a. Si los dos valores son iguales muestre 0
+b. Si los dos valores tienen el mismo resto al dividir entre 6 mostrar el más
+pequeño
+c. Si no que muestre el más grande de los dos-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let numero1 = parseInt(window.prompt("Introduce un número"))
+let numero2 = parseInt(window.prompt("Introduce un segundo número"))
+let resto1= numero1%6
+let resto2 =numero2%6
+if (numero1==numero2){
+window.alert("0")
+}else if (resto1 === resto2) {
+    if (numero1 < numero2){ //operador ternario
+        window.alert(numero2)    
+    }else
+    window.alert(numero2)   
+}else {
+    if(numero1>numero2){
+        window.alert(numero1)
+    }else{
+        window.alert(numero2)
+    }
+}
+    </script>
+</body>
+</html>

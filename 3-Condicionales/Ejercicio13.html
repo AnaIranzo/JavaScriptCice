@@ -1,0 +1,21 @@
+<!--13. Escribe un programa que dada una frase sacará su carácter central. Nota:
+a. Si la largura de la frase es par deberá sacar los dos caracteres centrales
+correspondientes.
+b. Si es impar deberá sacar su único carácter central.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let frase = window.prompt("Introduce una frase")
+frase.length%2 === 0
+? console.log(frase.substring(frase.length/2-1,frase.length/2+1))
+: console.log(frase.substring(parseInt(frase.length/2),parseInt(frase.length/2+1)))
+    </script>
+</body>
+</html>

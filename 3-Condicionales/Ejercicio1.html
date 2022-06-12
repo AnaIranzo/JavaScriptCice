@@ -1,0 +1,32 @@
+<!--1. Escribe un programa que pida dos números y que muestre la suma, la resta, la
+multiplicación, la media, el más grande y el más pequeño.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let numero1 = parseInt (window.prompt("Introduzca un número"))
+let numero2 = parseInt (window.prompt("Introduzca otro número"))
+let suma = numero1 + numero2
+let resta = numero1 - numero2
+let multiplicación = numero1 * numero2
+let media = (numero1 + numero2)/2
+console.log(`La suma es  ${suma}, la resta es ${resta}, la multiplicación es ${multiplicación} y la media es ${media}`)
+
+if (numero1 > numero2) {
+    console.log(`El número mas grande es ${numero1} y el ${numero2} es el mas pequeño`)
+}else if (numero2 > numero1){
+    console.log(`El número mas grande es ${numero2} y el ${numero1} es el mas pequeño`)
+} else {
+console.log ("Son iguales")
+}
+
+
+    </script>
+</body>
+</html>

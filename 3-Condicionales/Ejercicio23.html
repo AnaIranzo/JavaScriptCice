@@ -1,0 +1,22 @@
+<!--23. Un año es bisiesto si se puede dividir por 4. Pero un año que se pueda dividir por
+100 NO es bisiesto a no ser que se pueda dividir por 400. A partir de un año, mostrar
+en pantalla si es bisiesto o no.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let año = parseInt(window.prompt("Introduce un año"))
+if ((año%4===0 && año%100 !== 0) || año%400===0) {
+    window.alert("Año bisiesto")
+} else {
+    window.alert("Año no bisiesto")
+}
+    </script>
+</body>
+</html>

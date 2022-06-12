@@ -1,0 +1,28 @@
+<!--17. Mostrar el mayor de tres valores-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let numero1 = (window.prompt("Introduce un número"))
+let numero2 = (window.prompt("Introduce un segundo número"))
+let numero3 = (window.prompt("Introduce un tercer número"))
+
+if ((numero1 > numero2) && (numero1 > numero3)) {
+    console.log(numero1)
+} else if ((numero2 > numero1) && (numero2 > numero3)) {
+    console.log(numero2)
+} else if ((numero3 > numero2) && (numero3 > numero1)) {
+    console.log(numero3)
+} else {
+    console.log ("No hay un número mayor que los demás")
+}
+
+    </script>
+</body>
+</html>

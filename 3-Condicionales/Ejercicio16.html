@@ -1,0 +1,37 @@
+<!--16. Con if else if: Mostrar en pantalla un menú con varias opciones. Dependiendo de lo
+que el usuario elija, mostrar en pantalla la selección. Hacerlo tanto con if else como
+con switch.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let opcion = window.prompt("Elija una opción: a, b, c o d")
+
+if (opcion === "a"){
+    consol.console.log("a")
+} else if (opcion === "b") {
+    console.log("b")
+} else if (opcion === "c"){
+    console.log("c")
+}else {
+    console.log("d")
+}
+
+let opcion2 = window.prompt("Elija una opción: a, b, c o d")
+switch (opcion2) {
+    case "a": 
+    case "b":
+    case "c":
+    case "d": 
+    window.alert(opcion2)
+}
+    </script>
+</body>
+</html>

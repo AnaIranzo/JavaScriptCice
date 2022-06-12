@@ -1,0 +1,28 @@
+<!--3. Escribe un programa que pida al usuario 3 números. Si el resultado de la suma de
+los dos primeros es igual al tercer número, mostrarlo en pantalla, si no mostrar que
+el tercero no es la suma de los dos anteriores.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let numero1 = parseInt(window.prompt("Introduce un número"))
+let numero2 = parseInt(window.prompt("Introduce un segundo número"))
+let numero3 = parseInt(window.prompt("Introduce un tercer número"))
+if ((numero1 + numero2) === numero3 ) {
+window.alert(`El tercer número: ${numero3}, es igual a la suma de los dos primeros`)
+}else{
+    window.alert(`El tercer número: ${numero3}, no es la suma de los dos anteriores`)
+}
+
+/* numero1 + numero2 === numero3
+? window.alert(`El tercer número: ${numero3}, es igual a la suma de los dos primeros`)
+: window.alert(`El tercer número: ${numero3}, no es la suma de los dos anteriores`)*/
+    </script>
+</body>
+</html>

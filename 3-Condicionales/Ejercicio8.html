@@ -1,0 +1,26 @@
+<!--8. Escribe un programa que pida dos números al usuario. Después muestra un
+mensaje que dice cómo se relacionan entre los dos. Por ejemplo si escribe 5 y 7 ,
+muestra "5 es menor que 7".-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <script>
+let numero1 = parseInt(window.prompt("Introduce un número"))
+let numero2 = parseInt(window.prompt("Introduce un segundo número"))
+
+if (numero1 < numero2){
+    window.alert(`${numero1} es menor que ${numero2}`)
+}else if (numero2 < numero1){
+    window.alert(`${numero2} es menor que ${numero1}`)
+} else {
+    window.alert(`${numero2} y ${numero1} son iguales`)
+}
+    </script>
+</body>
+</html>

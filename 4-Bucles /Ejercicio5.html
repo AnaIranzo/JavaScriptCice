@@ -1,0 +1,43 @@
+<!--5. Escribe un programa que muestre el resultado de sumar todos los números del 1 hasta el
+número introducido y que vuelva a pedirle al usuario otro número hasta que el usuario
+introduzca un 0.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let numero = parseInt(window.prompt("Introduzca un número"))
+let suma = 0
+while (numero!==0){
+    
+    suma = suma + numero
+    numero = parseInt(window.prompt("Introduzca un número"))
+    
+}
+
+window.alert(suma)
+
+
+        
+/*let numero = parseInt(window.prompt("Introduzca un número"))
+let suma
+for (let i= 1; i < numero; i++) {
+    suma += i
+    console.log(suma)
+} if (numero !== 0){
+    let numero = parseInt(window.prompt("Introduzca otro número"))
+    for (let i= 1; i < numero; i++) {
+    suma += i
+    console.log(suma)
+}}*/
+
+
+    </script>
+</body>
+</html>
