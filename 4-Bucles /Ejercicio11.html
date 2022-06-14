@@ -12,7 +12,7 @@ programa.-->
 </head>
 <body>
     <script>
-let num = window.prompt("Introduce un número")
+/*let num = window.prompt("Introduce un número")
 let num1 = ""
 let num2 = ""
 if (num !== 0) {
@@ -31,7 +31,21 @@ if (num !== 0) {
 }
 }else {
    window.alert(num) 
-} // no se que estoy haciendo mal, en principio mientras la posicion sea diferente a la longitud del string deberia hacer el while e ir sumando uno a la posicion y concatenandola
-    </script>
+} */
+
+do {
+    let numero = window.prompt("Introduce un número")
+    let inverso = ""
+    for (let i = 0; i < numero.length; i++) {
+        inverso += numero.substring(numero.length -i, numero.length-i +1)   
+        
+    }
+    console.log (inverso)
+
+
+
+}while (numero !== "0")
+    
+</script>
 </body>
 </html>

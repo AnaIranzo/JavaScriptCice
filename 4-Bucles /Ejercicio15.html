@@ -13,7 +13,30 @@ que la contraseña sea correcta deberá cumplir estas directivas:
 </head>
 <body>
     <script>
-// no encuentro las funciones
+
+let contrasena = window.prompt("Introduce tu contraseña")
+let numero = false //interruptor logico
+if (contrasena.length>= 8){
+    
+    for (let i = 0; i < contrasena.length; i++) {
+        if(contrasena.includes(i.toString())){//pasamos cada uno de los strings por el for
+            numero = true //interruptor logico
+        }
+    }
+
+    if (numero){
+        if(contrasena.substring(0,1)=== contrasena.substring(0,1).toUpperCase()) {
+        console.log("La contraseña SI cumple los requisitos")
+        }else{
+    console.log("La contraseña no cumple los requisitos")
+    }
+    }else{
+    console.log("La contraseña no cumple los requisitos")
+    }
+
+}else{
+    console.log("La contraseña no cumple los requisitos")
+}
     </script>
 </body>
 </html>

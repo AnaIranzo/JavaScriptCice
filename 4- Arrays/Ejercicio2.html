@@ -11,7 +11,7 @@ posición 1, después posición 2 y por último posición 0.-->
 </head>
 <body>
     <script>
-let array1 = []
+/*let array1 = []
 let string1 = window.prompt("Introduce un string")
 array1.push(string1)
 let string2 = window.prompt("Introduce un string")
@@ -20,7 +20,16 @@ let string3 = window.prompt("Introduce un string")
 array1.push(string3)
 console.log(array1[0])
 console.log(array1[1])
-console.log(array1[2])
+console.log(array1[2])*/
+
+let array1 = []
+for (let i = 0; i < 3; i++) {
+    array1.push(window.prompt("Introduce un valor"))    
+}
+
+console.log(array1[1],array1[2],array1[0])
+
+
 
     </script>
 </body>

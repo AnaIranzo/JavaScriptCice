@@ -12,7 +12,7 @@ solo dígito. Por ejemplo, la fecha de nacimiento de Emma es la siguiente: 16-08
 </head>
 <body>
     <script>
-let fecha = window.prompt("Introduce tu fecha de nacimiento (dd-mm-aaaa) para conocer tu lucky number")
+/*let fecha = window.prompt("Introduce tu fecha de nacimiento (dd-mm-aaaa) para conocer tu lucky number")
 let dia = fecha.substring(0,2)
 console.log(dia)
 let mes = fecha.substring(3,5)
@@ -25,8 +25,23 @@ let a = toString(lucky1.substring(0,1))
 let b = toString(lucky1.substring(1,2))
 let c = toString(lucky1.substring(2,3))
 let d = toString(lucky1.substring(3,4))
-console.log(a,b,c,d) //no se como seguir
+console.log(a,b,c,d) */
 
+let fecha = window.prompt("Introduce tu fecha de nacimiento (dd/mm/aaaa) para conocer tu lucky number")
+let num = parseInt(fecha.substring(0,2))+parseInt(fecha.substring(3,5))+parseInt(fecha.substring(6)).toString()
+
+let suma = 0
+
+do {
+suma = 0
+for (let i = 0; i < num.length; i++) {
+    suma += parseInt (num.substring(i,i+1))
+}
+
+num = suma.toString()
+} while(suma.length > 1)
+
+console.log(suma)
 
 
     </script>

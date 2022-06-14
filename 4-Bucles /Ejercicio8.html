@@ -21,8 +21,33 @@ for (let i = 1; i <= 100; i++){
     }else if (tipo === "P"){
         if (i%2 === 0) {
             console.log (i)}
+    } else {
+        window.alert("Ese valor no es correcto")
     }
 }
+
+
+/*
+
+do {
+let opcion = (window.prompt("Introduzca una P (para pares) o una I (impares)")).toUpperCase()
+    if (opcion !== "I" && opcion !== "P"){
+         window.alert("Esa opcion no es correcta")
+        
+    } else {
+        for (let i = 1; i <= 100; i++){
+        if (i%2 === 0 && opcion ==="P"){   
+            console.log (i)
+        } else if (i%2 === 1 && opcion ==="I"){
+            console.log(i)
+        }
+        
+    }   
+} while (opcion !== "P" && !== "I")
+
+
+
+*/
     </script>
 </body>
 </html>

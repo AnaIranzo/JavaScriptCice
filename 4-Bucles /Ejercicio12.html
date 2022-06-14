@@ -10,11 +10,20 @@ sus dígitos.-->
 </head>
 <body>
     <script>
-let num = window.prompt("Introduce un número de tres dígitos")
+/*let num = window.prompt("Introduce un número de tres dígitos")
 let num1 = parseInt(num.substring(0,1))
 let num2 = parseInt(num.substring(1,2))
 let num3 = parseInt(num.substring(2,3))
-window.alert(`La suma de los tres dígitos es ${num1+num2+num3}`)
+window.alert(`La suma de los tres dígitos es ${num1+num2+num3}`)*/
+
+let cifra = window.prompt("Introduce un número de tres dígitos")
+for (let i = 0; i < cifra.length; i++) {
+   suma += parseInt(cifra.substring(i, i+1))
+    
+}console.log(suma)
+
+
+
 
     </script>
 </body>
