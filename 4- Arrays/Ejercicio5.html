@@ -10,7 +10,7 @@ introduce un número del 1 al 12, mostrar el nombre de ese mes en pantalla-->
 </head>
 <body>
     <script>
-let meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+/*let meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
 
 switch(window.prompt("Introduce un número del 1 al 12")){
     case "1": window.alert(meses[0])
@@ -37,10 +37,21 @@ switch(window.prompt("Introduce un número del 1 al 12")){
     break
     case "12": window.alert(meses[11])
     break
+
+}
+*/
+   
+   let meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]
+
+   let peticion = parseInt(window.prompt("Introduce un mes"))
+
+   console.log(meses[peticion-1])
+   
+   
    
 
 
-}
+
     </script>
 </body>
 </html>

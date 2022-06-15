@@ -12,7 +12,19 @@ entre 0 y 9, mostrar el valor de esa posición del array, y modificarlo multipli
 </head>
 <body>
     <script>
-
+let array = [1,1,1,1,1,1,1,1,1,1]
+/*let posicion = 0
+for (let i = 0; i < 10; i++) {
+    posicion = parseInt(window.prompt("Introduzca un número entre el 0 y el 9"))
+    window.alert(array[posicion])
+}*/
+let num = 0
+do {
+  num = parseInt(window.prompt("Introduzca un número entre el 0 y el 9"))
+  num >= 0 && num <= 9
+  ? console.log((array [num]), array[num] = array [num]*2)
+  : console.log("No es correcto")
+}while (numero >=0)
     </script>
 </body>
 </html>

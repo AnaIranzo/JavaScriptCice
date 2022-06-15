@@ -14,7 +14,20 @@ el valor que contiene. Por ejemplo, si introduce 7, 7, 7, 5, 6, 5, 9, 9, 10, -1 
 </head>
 <body>
     <script>
+let array = [0,0,0,0,0,0,0,0,0,0,0]
+let numero = 0
+do {
+numero = parseInt(window.prompt("Introduce un índice"))
+numero > 10 || numero < 0
+? console.log("No es correcto")
+: array [numero] = array [numero]+1, console.log(array[numero])
 
+}while (numero >= 0)
+
+for (let i = 0; i < array.length; i++) {
+    console.log(`${i} ----- ${array[i]}`)
+    
+}
     </script>
 </body>
 </html>

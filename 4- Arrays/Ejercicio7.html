@@ -10,12 +10,26 @@ números y lo muestre por consola. No es necesario pedir los números al usuario
 </head>
 <body>
     <script>
-let array1 = [1,2,3,4,5,6,7,8,9,0]
+/*let array1 = [1,2,3,4,5,106,7,8,101,0]
 let longitud = array1.length
 let suma = 0
 for (let i = 0; i < longitud; i++){
     suma = suma + i
-} console.log(suma/longitud)
+} console.log(suma/longitud)*/
+
+
+let array = []
+let suma = 0
+let longitud = parseInt(window.prompt("Introduce la longitud"))
+for (let i = 0; i < longitud; i++) {
+    array.push(Math.floor(Math.random()*100))  
+}
+
+for (let i = 0; i < array.length; i++) {
+   suma += array[i]
+    
+}console.log(suma/array.length)
+
     </script>
 </body>
 </html>

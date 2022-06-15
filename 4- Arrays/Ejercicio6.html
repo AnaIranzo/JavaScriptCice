@@ -14,7 +14,7 @@ Comparar los 3 valores del array y mostrar en pantalla el más pequeño.-->
 let array1 =[]
 let num = 0
 for (let i = 0; i< 3; i++){
-num= parseInt(window.prompt("Introduzca un número"))
+num= parseInt(window.prompt("Introduzca un número"))// array.push(parseInt(window.prompt("Introduzca un número"))
 array1.push(num)
 
 }if (array1[0] < array1[1] && array1 [0]< array1[2]){
@@ -24,6 +24,8 @@ array1.push(num)
 }else {
     console.log(array1[2])
 }
+
+//console.log(Math.min (array[0],array[1],array[2]))
     </script>
 </body>
 </html>
