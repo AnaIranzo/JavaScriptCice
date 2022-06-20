@@ -1,0 +1,23 @@
+<!--1. Crea un título y un párrafo en un archivo JS y haz que aparezcan en pantalla.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    
+    let newH1 = document.createElement("h1")
+    newH1.innerHTML = `<h1>Título</h1>`
+    document.body.appendChild(newH1)
+
+    let newP = document.createElement("p")
+    newP.innerHTML = `<p>Párrafo</p>`
+    document.body.appendChild(newP)
+
+ </script>   
+</body>
+</html>

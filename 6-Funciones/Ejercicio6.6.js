@@ -10,10 +10,10 @@ let num2 = 0
 do {
 num1 = parseInt(window.prompt("Introduce un número"))
 num2 = parseInt(window.prompt("Introduce otro número"))
-division (num1,num2)   
- 
+division (num1,num2)   //window.alert
+
 } while (num2 !== 0)
 
 function division(arg1,arg2) {
-window.alert(arg1/arg2)
+window.alert(arg1/arg2) //return
 }

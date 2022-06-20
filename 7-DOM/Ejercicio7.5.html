@@ -1,0 +1,69 @@
+<!--5. Crea un programa que te pida 2 números. Mostrar en pantalla la suma, la resta, la
+multiplicación, la división y el resto de esos 2 números. Mostrar cada operación con
+un color y un color de fondo distintos.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+let num1 = parseInt(window.prompt("Introduce un número"))
+let num2 = parseInt(window.prompt("Introduce otro número"))
+
+let newDiv1 = document.createElement("div")
+newDiv1.innerHTML = `<div id = div1> ${num1} + ${num2} = ${suma(num1,num2)}</div>`
+document.body.appendChild(newDiv1)
+document.getElementById("div1").style.color = "orange"
+document.getElementById("div1").style.background = "blue"
+
+let newDiv2 = document.createElement("div")
+newDiv2.innerHTML = `<div id = div2> ${num1} - ${num2} = ${resta(num1,num2)}</div>`
+document.body.appendChild(newDiv2)
+document.getElementById("div2").style.color = "blue"
+document.getElementById("div2").style.background = "cyan"
+
+let newDiv3 = document.createElement("div")
+newDiv3.innerHTML = `<div id = div3> ${num1} * ${num2} = ${multiplicacion(num1,num2)}</div>`
+document.body.appendChild(newDiv3)
+document.getElementById("div3").style.color = "magenta"
+document.getElementById("div3").style.background = "green"
+
+let newDiv4 = document.createElement("div")
+newDiv4.innerHTML = `<div id = div4> ${num1} / ${num2} = ${division(num1,num2)}</div>`
+document.body.appendChild(newDiv4)
+document.getElementById("div4").style.color = "purple"
+document.getElementById("div4").style.background = "violet"
+
+let newDiv5 = document.createElement("div")
+newDiv5.innerHTML = `<div id = div5> ${num1} % ${num2} = ${resto(num1,num2)}</div>`
+document.body.appendChild(newDiv5)
+document.getElementById("div5").style.color = "pink"
+document.getElementById("div5").style.background = "grey"
+
+function suma(arg1,arg2) {
+    return arg1 + arg2
+}
+
+function resta(arg1,arg2) {
+    return arg1 - arg2
+}
+
+function multiplicacion(arg1,arg2) {
+    return arg1 * arg2
+}
+
+function division(arg1,arg2) {
+    return arg1 / arg2
+}
+
+function resto(arg1,arg2) {
+    return arg1 % arg2
+}
+
+ </script>   
+</body>
+</html>

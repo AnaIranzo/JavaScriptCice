@@ -1,0 +1,57 @@
+<!--7. Crea una página web con su Header (con tres enlaces), su Main(con tres divs,
+dentro de cada div podéis meter lo que queráis por ejemplo una noticia) y su Footer
+(con un enlace al inicio de la página). Los enlaces del Header nos deberían llevar
+cada uno a uno de los divs.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+
+/*Header: 3 <a> a los <div>
+Main -> body: 3 <div>
+Footer: <a> al inicio*/
+
+let newHeader = document.createElement("header")
+newHeader.innerHTML = `<header>Header</header>`  
+document.body.appendChild(newHeader)  
+
+let a1 = document.createElement("a")
+a1.innerHTML = `<a href = "newDiv1.html" id = a1>Enlace 1</a>`
+document.body.appendChild(a1)
+
+let a2 = document.createElement("a")
+a2.innerHTML = `<a href = "newDiv2.html" id = a2>Enlace 2</a>`
+document.body.appendChild(a2)
+
+let a3 = document.createElement("a")
+a3.innerHTML = `<a href = "newDiv3.html" id = a3>Enlace 3</a>`
+document.body.appendChild(a3)
+
+let newDiv1 = document.createElement("div")
+newDiv1.innerHTML = `<div id = div1 >Div 1</div>`
+document.body.appendChild(newDiv1)
+
+let newDiv2 = document.createElement("div")
+newDiv2.innerHTML = `<div id = div2 >Div 2</div>`
+document.body.appendChild(newDiv2)
+
+let newDiv3 = document.createElement("div")
+newDiv3.innerHTML = `<div id = div3 >Div 3</div>`
+document.body.appendChild(newDiv3)
+
+let newFooter = document.createElement("footer")
+newFooter.innerHTML = `<footer>Footer <a id = aFooter href= "header.html">Inicio</a></footer>`
+document.body.appendChild(newFooter)
+
+
+
+
+ </script>   
+</body>
+</html>

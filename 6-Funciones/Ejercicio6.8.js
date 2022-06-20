@@ -6,11 +6,12 @@ resultado en un alert. */
 
 let num = parseInt(window.prompt("Introduce un número"))
 
-factorial(num)
+window.alert(factorial(num))
 
 function factorial(arg1) {
-    for (let i = 0; i < num; i++) {
-     arg1 *= arg1   
+    let resultado = 1
+    for (let i = 1; i <= arg1; i++) {
+     resultado *= i 
         }
-    window.alert(arg1)
+    return resultado
 }

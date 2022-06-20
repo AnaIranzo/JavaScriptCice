@@ -1,0 +1,60 @@
+<!--6. Crea un programa que te pregunte qué operación deseas realizar (Suma, Resta,
+Multiplicación, División y Resto). Después te pedirá dos números y aparecerán los
+dos números introducidos y el resultado de la operación de forma visual.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+let operacion = window.prompt(`Elige la operación que quieres realizar:
+1-Suma
+2-Resta
+3-Multiplicación
+4-División
+5-Resto`).toLowerCase()
+
+let num1 = parseInt(window.prompt("Introduce un número"))
+let num2 = parseInt(window.prompt("Introduce otro número"))
+
+if (operacion === "suma" || operacion === "1") {
+    let newDiv1 = document.createElement("div")
+    newDiv1.innerHTML = `<div> La suma de ${num1} + ${num2} es ${num1+num2}</div>`
+    document.body.appendChild(newDiv1)
+
+} else if (operacion === "resta" || operacion === "2") {
+    let newDiv2 = document.createElement("div")
+    newDiv2.innerHTML = `<div> La resta de ${num1} - ${num2} es ${num1-num2}</div>`
+    document.body.appendChild(newDiv2)
+    
+} else if (operacion === "multiplicacion" || operacion === "multiplicación" || operacion === "3") {
+    let newDiv3 = document.createElement("div")
+    newDiv3.innerHTML = `<div> La multiplicación de ${num1} * ${num2} es ${num1*num2}</div>`
+    document.body.appendChild(newDiv3)
+
+}  else if (operacion === "división" || operacion === "division" || operacion === "4") {
+    let newDiv4 = document.createElement("div")
+    newDiv4.innerHTML = `<div> La división de ${num1} / ${num2} es ${num1/num2}</div>`
+    document.body.appendChild(newDiv4)
+
+} else if (operacion === "resto" || operacion === "5") {
+    let newDiv5 = document.createElement("div")
+    newDiv5.innerHTML = `<div> El resto de ${num1} % ${num2} es ${num1%num2}</div>`
+    document.body.appendChild(newDiv5)
+
+} else {
+    let newDiv6 = document.createElement("div")
+    newDiv6.innerHTML = `<div>Esa opción no es correcta</div>`
+    document.body.appendChild(newDiv6)
+
+}
+
+
+
+ </script>   
+</body>
+</html>

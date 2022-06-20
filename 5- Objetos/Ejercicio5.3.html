@@ -1,0 +1,42 @@
+<!--3. Crea una página con un div vacío. Al entrar en la página se le preguntará al usuario que introduzca un número. Inserta ese número en el div vacío. Si el número es menor que 100, el número tendrá color verde, si el número es entre 100 y 200 tendrá color amarillo. Si el número es mayor que 200, tendrá color rojo.
+-->
+
+<!--div vacio
+pedir numero
+meter en div
+si <100 verde
+si 100-200 amarillo
+si >200 rojo-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let newDiv1 = document.createElement("div")
+let numero = parseInt(window.prompt("Introduce un número"))
+if (numero < 100) {
+    newDiv1.innerHTML = `<div id = "div1" >${numero}</div>`
+    document.body.appendChild(newDiv1)
+    document.getElementById("div1").style.color = "green"
+    
+} else if (numero  >= 100 && numero <= 200) {
+    newDiv1.innerHTML = `<div id = "div1">${numero}</div>`
+    document.body.appendChild(newDiv1)
+    document.getElementById("div1").style.color = "yellow"
+    
+} else if (numero > 200) {
+    newDiv1.innerHTML = `<div id = "div1" >${numero}</div>`
+    document.body.appendChild(newDiv1)
+    document.getElementById("div1").style.color = "red"
+    
+} 
+
+    </script>
+</body>
+</html>

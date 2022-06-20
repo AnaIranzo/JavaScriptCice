@@ -1,0 +1,35 @@
+<!--3. Crea un programa que te pida un nombre y una edad. Si la edad es menor a 18 años
+mostrar en pantalla “Hola (nombre), eres menor de edad.”. Si es mayor mostrar en
+pantalla “Hola (nombre), eres mayor de edad.”. Hacedlo con if, switch y condicional
+ternario.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+let nombre = window.prompt("Introduce tu nombre")
+let edad = parseInt(window.prompt("Introduce tu edad"))
+
+switch (edad) { //revisar
+    case 18-100:
+        let newP = document.createElement("p")
+        newP.innerHTML = `<p> Hola ${nombre}, eres mayor de edad`
+        document.body.appendChild(newP)
+        break;
+        case 0-17:
+        let newP2 = document.createElement("p")
+        newP2.innerHTML = `<p> Hola ${nombre}, eres menor de edad`
+
+        document.body.appendChild(newP2)    
+        break;
+    default:
+        break;
+} //no funciona con el switch
+ </script>   
+</body>
+</html>

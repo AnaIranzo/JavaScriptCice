@@ -10,3 +10,11 @@ function esPar(arg1) {
     ? window.alert("Es par")
     : window.alert("No es par")
 }
+
+/*window.alert(esPar(num)? "El numero es par" : "El numero es impar") 
+function esPar(arg1) {
+    arg1%2 === 0
+}
+
+
+*/

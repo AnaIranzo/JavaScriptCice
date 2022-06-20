@@ -1,0 +1,224 @@
+<!--7. Pedir al usuario tres nombres de planetas del Sistema Solar. Con el objeto Sistema Solar, muestra los datos de los tres planetas elegidos. Asegúrate de que los nombres existen (y coinciden con las claves del objeto) y de que el usuario no introduce valores repetidos.
+a. Los 3 planetas deberán aparecer en el navegador, cada uno dentro de una card. Los tres estarán colocados uno junto al otro, alineados horizontalmente. b. Arriba del todo de la card aparecerá el nombre, luego la imagen y después
+las características (color y temperatura).
+
+pedir tresplanetas
+no repetidos
+existen
+card, alineados horizontal
+nombre, imagen, caracteristicas-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let sistemaSolar = {
+  mercurio: {
+    nombre: "mercurio",
+    color: "gris",
+    temperatura: 350,
+    imagen: "https://www.astromia.com/fotosolar/fotos/planetamercurio.jpg",
+  },
+  venus: {
+    nombre: "venus",
+    color: "blanco",
+    temperatura: 460,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/220px-Venus-real_color.jpg",
+  },
+  tierra: {
+    nombre: "tierra",
+    color: "morado",
+    temperatura: 14,
+    imagen:
+      "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5a0ab2a75bafe87f4d3f9a63/acaba-tiempo_0.jpg",
+  },
+  marte: {
+    nombre: "marte",
+    color: "rojo",
+    temperatura: -46,
+    imagen:
+      "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/55365b6b34099b0279c8fb2e/slide-marte.jpg",
+  },
+  jupiter: {
+    nombre: "jupiter",
+    color: "marrón",
+    temperatura: -121,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Jupiter_by_Cassini-Huygens.jpg/280px-Jupiter_by_Cassini-Huygens.jpg",
+  },
+  saturno: {
+    nombre: "saturno",
+    color: "amarillo",
+    temperatura: -130,
+    imagen:
+      "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/558d2b15010e26221b57df75/saturno.jpg",
+  },
+  urano: {
+    nombre: "urano",
+    color: "azul",
+    temperatura: -205,
+    imagen: "http://www.manzanares.es/v2/sites/paseo/img/urano/urano1.jpg",
+  },
+  neptuno: {
+    nombre: "neptuno",
+    color: "azul",
+    temperatura: -220,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Neptune_Full.jpg/280px-Neptune_Full.jpg",
+  },
+  pluton: {
+    nombre: "plutón",
+    color: "blanco",
+    temperatura: -229,
+    imagen:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Nh-pluto-in-true-color_2x_JPEG.jpg/1200px-Nh-pluto-in-true-color_2x_JPEG.jpg",
+  },
+};
+
+
+let planeta1 = window.prompt(`Elige un primer planeta:
+1-Mercurio
+2-Venus
+3-Tierra
+4-Marte
+5-Jupiter
+6-Saturno
+7-Urano
+8-Neptuno
+9-Plutón`).toLowerCase()
+
+let planeta2 = window.prompt(`Elige un segundo planeta:
+Mercurio
+Venus
+Tierra
+Marte
+Jupiter
+Saturno
+Urano
+Neptuno
+Plutón`).toLowerCase()
+
+let planeta3 = window.prompt(`Elige un tercer planeta:
+Mercurio
+Venus
+Tierra
+Marte
+Jupiter
+Saturno
+Urano
+Neptuno
+Plutón`).toLowerCase()
+
+if (planeta1 === "mercurio" && planeta2 !== "mercurio" && planeta3 !== "mercurio") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div id = "card"> 
+    <h2>${sistemaSolar.mercurio.nombre}</h2>
+    <img scr= "https://www.astromia.com/fotosolar/fotos/planetamercurio.jpg" alt="Mercurio" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.mercurio.color} ${sistemaSolar.mercurio.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1)
+    //no me funcionan las card
+  
+   
+} else if (planeta2 === "mercurio" && planeta1 !== "mercurio" && planeta3 !== "mercurio") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div id = "card"> 
+    <h2>${sistemaSolar.mercurio.nombre}</h2>
+    <img scr= "https://www.astromia.com/fotosolar/fotos/planetamercurio.jpg" alt="Mercurio" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.mercurio.color, sistemaSolar.mercurio.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1)
+   
+
+   
+} else if (planeta3 === "mercurio" && planeta1 !== "mercurio" && planeta2 !== "mercurio") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div id = "card"> 
+    <h2>${sistemaSolar.mercurio.nombre}</h2>
+    <img scr= "https://www.astromia.com/fotosolar/fotos/planetamercurio.jpg" alt="Mercurio" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.mercurio.color} ${sistemaSolar.mercurio.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1)
+    
+
+
+} if (planeta1 === "venus" && planeta2 !== "venus" && planeta3 !== "venus") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div id = "card"> 
+    <h2>${sistemaSolar.venus.nombre}</h2>
+    <img scr= "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/220px-Venus-real_color.jpg" alt="Venus" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.venus.color} ${sistemaSolar.venus.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1)
+    
+    
+   
+} else if (planeta2 === "venus" && planeta1 !== "venus" && planeta3 !== "venus") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div id = "card"> 
+    <h2>${sistemaSolar.venus.nombre}</h2>
+    <img scr= "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/220px-Venus-real_color.jpg" alt="Venus" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.venus.color} ${sistemaSolar.venus.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1)
+    
+   
+   
+} else if (planeta3 === "venus" && planeta1 !== "venus" && planeta2 !== "venus") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div class = "card"> 
+    <h2>${sistemaSolar.venus.nombre}</h2>
+    <img scr= "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/220px-Venus-real_color.jpg" alt="Venus" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.venus.color} ${sistemaSolar.venus.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1) 
+  
+   
+
+
+} if (planeta1 === "tierra" && planeta2 !== "tierra" && planeta3 !== "tierra") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div id = "card"> 
+    <h2>${sistemaSolar.tierra.nombre}</h2>
+    <img scr= "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5a0ab2a75bafe87f4d3f9a63/acaba-tiempo_0.jpg" alt="Tierra" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.tierra.color} ${sistemaSolar.tierra.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1)
+   
+    
+   
+} else if (planeta2 === "tierra" && planeta1 !== "tierra" && planeta3 !== "tierra") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div id = "card"> 
+    <h2>${sistemaSolar.tierra.nombre}</h2>
+    <img scr= "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5a0ab2a75bafe87f4d3f9a63/acaba-tiempo_0.jpg" alt="Tierra" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.tierra.color} ${sistemaSolar.tierra.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1)
+    
+ 
+   
+} else if (planeta3 === "tierra" && planeta1 !== "tierra" && planeta2 !== "tierra") {
+   let newDiv1 = document.createElement("div")
+   newDiv1.innerHTML = `<div id = "card"> 
+    <h2>${sistemaSolar.tierra.nombre}</h2>
+    <img scr= "https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/5a0ab2a75bafe87f4d3f9a63/acaba-tiempo_0.jpg" alt="Tierra" style = "width:100%">
+    <div class="container"><p>${sistemaSolar.tierra.color} ${sistemaSolar.tierra.temperatura}</p></div>
+    </div>`
+    document.body.appendChild(newDiv1)
+  
+
+}
+
+
+
+    </script>
+</body>
+</html>

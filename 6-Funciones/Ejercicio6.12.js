@@ -4,22 +4,18 @@ bisiesto” o “El año … no es bisiesto” y sigue pidiendo números y dicie
 bisiesto hasta que introduzca un 0. Un año es bisiesto si es divisible entre 4, pero no
 si es divisible entre 100 pero si es divisible entre 400 sí lo es*/
 
-let año = 0
+let ano = 0
 
 do {
-año = parseInt(window.prompt("Introduce un año"))
-bisiesto(año)
+ano = parseInt(window.prompt("Introduce un año"))
+bisiesto(ano)
 ? window.alert("El año es bisiesto")
 : window.alert("El año no es bisiesto")
 
-} while (año !== 0);
+} while (ano !== 0);
 
 
 
 function bisiesto(arg1) {
-    if (arg1%4 === 0 && ( arg1%100=== 0 && arg1%400 === 0)) {
-        return true
-    } 
-    
-  
+    return ((arg1%4 === 0 && arg1%100 !== 0) || arg1%400 === 0)
 }

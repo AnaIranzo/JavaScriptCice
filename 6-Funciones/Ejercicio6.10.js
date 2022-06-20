@@ -28,18 +28,20 @@ if (figura === "circulo" || figura === "círculo") {
 } else if (figura === "cuadrado"){
     lado = parseInt(window.prompt("Introduce el lado del cuadrado"))
     window.alert(aCuadrado(lado))
+} else {
+    window.alert("Esa opción no es válida")
 }
 
 function aCirculo(arg1) {
-    return (arg1**2)* Math.PI
+    return parseInt((arg1**2)* Math.PI)
 }
 
 
 function aTriangulo(arg2,arg3) {
-    return (arg2 * arg3)/2
+    return parseInt((arg2 * arg3)/2)
 }
 
 
 function aCuadrado(arg4) {
-    return arg4 * arg4 
+    return parseInt(arg4 * arg4)
 }

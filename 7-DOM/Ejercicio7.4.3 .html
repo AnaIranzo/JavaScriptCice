@@ -1,0 +1,27 @@
+<!--4. Lo mismo que en el ejercicio 3. Pero si es menor de edad que el mensaje sea rojo y
+si es mayor de edad que el mensaje sea verde.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+let nombre = window.prompt("Introduce tu nombre")
+let edad = parseInt(window.prompt("Introduce tu edad")) 
+let newP  = document.createElement("p")
+let newP2 = document.createElement("p")
+
+newP.innerHTML = `<p id = "p1"> Hola ${nombre}, eres mayor de edad`
+newP2.innerHTML = `<p id = "p2"> Hola ${nombre}, eres menor de edad`
+
+edad >= 18
+? ((document.body.appendChild(newP)), (document.getElementById("p1").style.color = "green"))
+: (document.body.appendChild(newP2), document.getElementById("p2").style.color = "red")
+
+ </script>   
+</body>
+</html>
