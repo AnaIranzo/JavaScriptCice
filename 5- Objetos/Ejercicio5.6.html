@@ -10,6 +10,25 @@ En caso de que no haya persona con ese nombre, mostrar un mensaje al respecto.--
     <title>Document</title>
 </head>
 <body>
+    <style>
+        .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  display: flex;
+  align-items: center;
+}
+    </style>
     <script>
 let personas = {
   BridgetteMcGuire: {
@@ -174,10 +193,10 @@ let personas = {
     favoriteFruit: "strawberry",
   },
 };
-
+/*
 let persona = window.prompt("Introduzca el nombre de la persona de la que quiere los datos").toLowerCase()
 
-if (persona === "bridgette mcguire") {
+if (persona === "bridgette mcguire") { //personas.BridgetteMcGuire.name
     let newDiv1 = document.createElement("div")
     newDiv1.innerHTML= `<div id = "div1"></div>`
     document.body.appendChild(newDiv1)
@@ -186,7 +205,7 @@ if (persona === "bridgette mcguire") {
     <p>${personas.BridgetteMcGuire.age}</p>
     <p>${personas.BridgetteMcGuire.email}</p>
     <p>${personas.BridgetteMcGuire.address}</p>`
-    document.getElementById("div1").style.background = personas.BridgetteMcGuire.eyeColor
+    document.getElementById("div1").style.backgroundColor = personas.BridgetteMcGuire.eyeColor
     document.getElementById("div1").style.textAlign = "center"
     document.getElementById("div1").style.verticalAlign = "center"
 
@@ -199,7 +218,7 @@ if (persona === "bridgette mcguire") {
     <p>${personas.melindawheeler.age}</p>
     <p>${personas.melindawheeler.email}</p>
     <p>${personas.melindawheeler.address}</p>`
-    document.getElementById("div1").style.background = personas.melindawheeler.eyeColor
+    document.getElementById("div1").style.backgroundColor = personas.melindawheeler.eyeColor
     document.getElementById("div1").style.textAlign = "center"
     document.getElementById("div1").style.verticalAlign = "center"
 
@@ -212,7 +231,7 @@ if (persona === "bridgette mcguire") {
     <p>${personas.WardFulton.age}</p>
     <p>${personas.WardFulton.email}</p>
     <p>${personas.WardFulton.address}</p>`
-    document.getElementById("div1").style.background = personas.WardFulton.eyeColor
+    document.getElementById("div1").style.backgroundColor = personas.WardFulton.eyeColor
     document.getElementById("div1").style.textAlign = "center"
     document.getElementById("div1").style.verticalAlign = "center"
 
@@ -225,7 +244,7 @@ if (persona === "bridgette mcguire") {
     <p>${personas.TessaSellers.age}</p>
     <p>${personas.TessaSellers.email}</p>
     <p>${personas.TessaSellers.address}</p>`
-    document.getElementById("div1").style.background = personas.TessaSellers.eyeColor
+    document.getElementById("div1").style.backgroundColor = personas.TessaSellers.eyeColor
     document.getElementById("div1").style.textAlign = "center"
     document.getElementById("div1").style.verticalAlign = "center"
 
@@ -238,7 +257,7 @@ if (persona === "bridgette mcguire") {
     <p>${personas.KimberleyRoberson.age}</p>
     <p>${personas.KimberleyRoberson.email}</p>
     <p>${personas.KimberleyRoberson.address}</p>`
-    document.getElementById("div1").style.background = personas.KimberleyRoberson.eyeColor
+    document.getElementById("div1").style.backgroundColor = personas.KimberleyRoberson.eyeColor
     document.getElementById("div1").style.textAlign = "center"
     document.getElementById("div1").style.verticalAlign = "center"
 
@@ -251,7 +270,7 @@ if (persona === "bridgette mcguire") {
     <p>${personas.EleanorStafford.age}</p>
     <p>${personas.EleanorStafford.email}</p>
     <p>${personas.EleanorStafford.address}</p>`
-    document.getElementById("div1").style.background = personas.EleanorStafford.eyeColor
+    document.getElementById("div1").style.backgroundColor = personas.EleanorStafford.eyeColor
     document.getElementById("div1").style.textAlign = "center"
     document.getElementById("div1").style.verticalAlign = "center"
 
@@ -264,7 +283,7 @@ if (persona === "bridgette mcguire") {
     <p>${personas.CraneHarris.age}</p>
     <p>${personas.CraneHarris.email}</p>
     <p>${personas.CraneHarris.address}</p>`
-    document.getElementById("div1").style.background = personas.CraneHarris.eyeColor
+    document.getElementById("div1").style.backgroundColor = personas.CraneHarris.eyeColor
     document.getElementById("div1").style.textAlign = "center"
     document.getElementById("div1").style.verticalAlign = "center"
 
@@ -272,9 +291,30 @@ if (persona === "bridgette mcguire") {
     let newDiv1 = document.createElement("div")
     newDiv1.innerHTML= `<div id = div1>Esa opción no es válida</div>`
     document.body.appendChild(newDiv1) 
+}*/
+let busqueda = window.prompt("Introduce un nombre")
+let respuesta = document.createElement("div")
+respuesta.classList.add("container")
+let encontrado = false
+
+for (const nombre in personas) {
+    if (nombre.name === busqueda) {
+    encontrado = true
+    respuesta.innerHTML = `
+    <div class = "card">
+    <img src="${nombre.picture}" alt="${nombre.name}"/>
+    <h3>${nombre.name}</h3>
+    <p>${nombre.email}</p>
+    <p>${nombre.adress}</p>
+    </div>`
+    }
 }
 
+if (!encontrado) {
+    respuesta.innerHTML = `<p></p>`
+}
 
+document.body.appendChild(respuesta)
     </script>
 </body>
 </html>

@@ -16,17 +16,17 @@ ternario.-->
   let edad = parseInt(window.prompt("Introduce tu edad"))
 
   if (edad >= 18) {
-    let newP = document.createElement("p")
-    newP.innerHTML = `<p> Hola ${nombre}, eres mayor de edad </p>`
-    document.body.appendChild(newP)
+    let newDiv = document.createElement("div") // crear div y document.getElementById("if").innerHTML = `<p> Hola ${nombre}, eres mayor de edad </p>`
+    newDiv.innerHTML = `<div> Hola ${nombre}, eres mayor de edad </div>`
+    document.body.appendChild(newDiv)
   } else if (edad < 18) {
-    let newP = document.createElement("p")
-    newP.innerHTML = `<p> Hola ${nombre}, eres menor de edad </p>`
-    document.body.appendChild(newP)
+    let newDiv = document.createElement("div")
+    newDiv.innerHTML = `<div> Hola ${nombre}, eres menor de edad </div>`
+    document.body.appendChild(newDiv)
   } else {
-    let newP = document.createElement("p")
-    newP.innerHTML = `<p> Esa opción no es correcta </p>`
-    document.body.appendChild(newP)
+    let newDiv = document.createElement("div")
+    newDiv.innerHTML = `<div> Esa opción no es correcta </div>`
+    document.body.appendChild(newDiv)
   }
  </script>   
 </body>

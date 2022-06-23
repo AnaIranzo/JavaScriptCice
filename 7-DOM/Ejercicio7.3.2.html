@@ -15,21 +15,51 @@ ternario.-->
 let nombre = window.prompt("Introduce tu nombre")
 let edad = parseInt(window.prompt("Introduce tu edad"))
 
-switch (edad) { //revisar
+/*switch (edad) { 
     case 18-100:
-        let newP = document.createElement("p")
-        newP.innerHTML = `<p> Hola ${nombre}, eres mayor de edad`
-        document.body.appendChild(newP)
+        let newDiv = document.createElement("div")
+        newDiv.innerHTML = `<div> Hola ${nombre}, eres mayor de edad</div>`
+        document.body.appendChild(newDiv)
         break;
         case 0-17:
-        let newP2 = document.createElement("p")
-        newP2.innerHTML = `<p> Hola ${nombre}, eres menor de edad`
+        let newDiv2 = document.createElement("div")
+        newDiv2.innerHTML = `<div> Hola ${nombre}, eres menor de edad</div>`
 
-        document.body.appendChild(newP2)    
+        document.body.appendChild(newDiv2)    
         break;
     default:
         break;
-} //no funciona con el switch
+} */
+switch (edad) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:   
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    let newDiv2 = document.createElement("div")
+    newDiv2.innerHTML = `<div> Hola ${nombre}, eres menor de edad</div>`
+    document.body.appendChild(newDiv2)
+        break;
+
+    default:
+    let newDiv = document.createElement("div")
+    newDiv.innerHTML = `<div> Hola ${nombre}, eres mayor de edad</div>`
+    document.body.appendChild(newDiv)
+        break;
+}
+
  </script>   
 </body>
 </html>

@@ -13,20 +13,52 @@ si es mayor de edad que el mensaje sea verde.-->
 let nombre = window.prompt("Introduce tu nombre")
 let edad = parseInt(window.prompt("Introduce tu edad"))
 
-switch (edad) {
+/*switch (edad) {
     case 18-100:
         let newP = document.createElement("p")
-        newP.innerHTML = `<p> Hola ${nombre}, eres mayor de edad`
+        newP.innerHTML = `<p> Hola ${nombre}, eres mayor de edad</p>`
         document.body.appendChild(newP)
         break;
         case 0-17:
         let newP2 = document.createElement("p")
-        newP.innerHTML = `<p> Hola ${nombre}, eres menor de edad`
+        newP.innerHTML = `<p> Hola ${nombre}, eres menor de edad</p>`
         document.body.appendChild(newP2)    
         break;
     default:
         break;
-}//no funciona con el switch
+}*/
+
+switch (edad) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:   
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    let newDiv2 = document.createElement("div")
+    newDiv2.innerHTML = `<div id = "div2"> Hola ${nombre}, eres menor de edad</div>`
+    document.body.appendChild(newDiv2)
+    document.getElementById("div2").style.color = "red"
+        break;
+
+    default:
+    let newDiv = document.createElement("div")
+    newDiv.innerHTML = `<div id="div1"> Hola ${nombre}, eres mayor de edad</div>`
+    document.body.appendChild(newDiv)
+    document.getElementById("div1").style.color = "green"
+        break;
+}
  </script>   
 </body>
 </html>

@@ -18,32 +18,34 @@ let newDiv1 = document.createElement("div")
 newDiv1.innerHTML = `<div id = div1> ${num1} + ${num2} = ${suma(num1,num2)}</div>`
 document.body.appendChild(newDiv1)
 document.getElementById("div1").style.color = "orange"
-document.getElementById("div1").style.background = "blue"
+document.getElementById("div1").style.backgroundColor = "blue"
 
 let newDiv2 = document.createElement("div")
 newDiv2.innerHTML = `<div id = div2> ${num1} - ${num2} = ${resta(num1,num2)}</div>`
 document.body.appendChild(newDiv2)
 document.getElementById("div2").style.color = "blue"
-document.getElementById("div2").style.background = "cyan"
+document.getElementById("div2").style.backgroundColor = "cyan"
 
 let newDiv3 = document.createElement("div")
 newDiv3.innerHTML = `<div id = div3> ${num1} * ${num2} = ${multiplicacion(num1,num2)}</div>`
 document.body.appendChild(newDiv3)
 document.getElementById("div3").style.color = "magenta"
-document.getElementById("div3").style.background = "green"
+document.getElementById("div3").style.backgroundColor = "green"
 
 let newDiv4 = document.createElement("div")
 newDiv4.innerHTML = `<div id = div4> ${num1} / ${num2} = ${division(num1,num2)}</div>`
 document.body.appendChild(newDiv4)
 document.getElementById("div4").style.color = "purple"
-document.getElementById("div4").style.background = "violet"
+document.getElementById("div4").style.backgroundColor = "violet"
 
 let newDiv5 = document.createElement("div")
 newDiv5.innerHTML = `<div id = div5> ${num1} % ${num2} = ${resto(num1,num2)}</div>`
 document.body.appendChild(newDiv5)
 document.getElementById("div5").style.color = "pink"
-document.getElementById("div5").style.background = "grey"
+document.getElementById("div5").style.backgroundColor = "grey"
 
+
+// colgarlos al final
 function suma(arg1,arg2) {
     return arg1 + arg2
 }

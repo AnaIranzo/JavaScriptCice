@@ -15,13 +15,19 @@ let edad = parseInt(window.prompt("Introduce tu edad"))
 let newP  = document.createElement("p")
 let newP2 = document.createElement("p")
 
-newP.innerHTML = `<p id = "p1"> Hola ${nombre}, eres mayor de edad`
-newP2.innerHTML = `<p id = "p2"> Hola ${nombre}, eres menor de edad`
+newP.innerHTML = `<p id = "p1"> Hola ${nombre}, eres mayor de edad</p>`
+/*
+newP2.innerHTML = `<p id = "p2"> Hola ${nombre}, eres menor de edad</p>`
 
 edad >= 18
 ? ((document.body.appendChild(newP)), (document.getElementById("p1").style.color = "green"))
 : (document.body.appendChild(newP2), document.getElementById("p2").style.color = "red")
+*/
+edad >= 18
+? (newP.inner.Text = `Hola ${nombre}, eres mayor de edad`, newP.style.color = "green")
+: (newP.inner.Text = `Hola ${nombre}, eres menor de edad`, newP.style.color = "gred")
 
+document.body.appendChild(newP)
  </script>   
 </body>
 </html>

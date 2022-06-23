@@ -14,19 +14,19 @@ si es mayor de edad que el mensaje sea verde.-->
   let edad = parseInt(window.prompt("Introduce tu edad"))
 
   if (edad >= 18) {
-    let newP = document.createElement("p")
-    newP.innerHTML = `<p id = "p1"> Hola ${nombre}, eres mayor de edad </p>`
-    document.body.appendChild(newP)
-    document.getElementById("p1").style.color = "green"
+    let newDiv = document.createElement("div")
+    newDiv.innerHTML = `<div id = "div1"> Hola ${nombre}, eres mayor de edad </div>`
+    document.body.appendChild(newDiv)
+    document.getElementById("div1").style.color = "green"
   } else if (edad < 18) {
-    let newP = document.createElement("p")
-    newP.innerHTML = `<p id = "p2"> Hola ${nombre}, eres menor de edad </p>`
-    document.body.appendChild(newP)
-    document.getElementById("p2").style.color = "red"
+    let newDiv = document.createElement("div")
+    newDiv.innerHTML = `<div id = "div2"> Hola ${nombre}, eres menor de edad </div>`
+    document.body.appendChild(newDiv)
+    document.getElementById("div2").style.color = "red"
   } else {
-    let newP = document.createElement("p")
-    newP.innerHTML = `<p> Esa opción no es correcta </p>`
-    document.body.appendChild(newP)
+    let newDiv = document.createElement("div")
+    newDiv.innerHTML = `<div> Esa opción no es correcta </div>`
+    document.body.appendChild(newDiv)
   }
  </script>   
 </body>

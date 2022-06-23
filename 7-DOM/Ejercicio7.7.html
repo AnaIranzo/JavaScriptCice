@@ -11,13 +11,39 @@ cada uno a uno de los divs.-->
     <title>Document</title>
 </head>
 <body>
+  
+  
  <script>
+    
 
 /*Header: 3 <a> a los <div>
-Main -> body: 3 <div>
+Main : 3 <div>
 Footer: <a> al inicio*/
 
-let newHeader = document.createElement("header")
+    let contenido = document.createElement("div")
+    contenido.innerHTML = `  <header id="header">
+        <nav>
+            <link rel = "stylesheet" href= "#p1">Párrafo 1</link>
+            <link rel = "stylesheet" href= "#p2">Párrafo 2</link>
+            <link rel = "stylesheet" href= "#p3">Párrafo 3</link>
+
+        </nav>
+    </header>
+        <main>
+            <div><p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, nostrum! Deserunt, sapiente laboriosam. Ad commodi aperiam assumenda esse libero aut laudantium placeat voluptates! Quaerat corrupti molestias suscipit temporibus voluptatum rem.</p></div>
+            <div><p = id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nam sed quas. Aspernatur pariatur nostrum culpa aliquid ad, ratione incidunt omnis deleniti voluptas dolore ducimus nam vero cupiditate, hic quia.
+            </p></div>
+            <div><p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis a, eveniet laboriosam incidunt ipsam eum doloribus illo accusamus amet perspiciatis! Quae, dolore eos in non sunt dicta excepturi autem numquam.</p></div>
+
+        </main>
+    
+        <footer>
+            <link rel = "stylesheet" href= "#header">Inicio</link>
+        </footer>`
+
+        document.body.appendChild(contenido)
+
+/*let newHeader = document.createElement("header")
 newHeader.innerHTML = `<header>Header</header>`  
 document.body.appendChild(newHeader)  
 
@@ -34,20 +60,20 @@ a3.innerHTML = `<a href = "newDiv3.html" id = a3>Enlace 3</a>`
 document.body.appendChild(a3)
 
 let newDiv1 = document.createElement("div")
-newDiv1.innerHTML = `<div id = div1 >Div 1</div>`
+newDiv1.innerHTML = `<div id = "div1" >Div 1</div>`
 document.body.appendChild(newDiv1)
 
 let newDiv2 = document.createElement("div")
-newDiv2.innerHTML = `<div id = div2 >Div 2</div>`
+newDiv2.innerHTML = `<div id = "div2" >Div 2</div>`
 document.body.appendChild(newDiv2)
 
 let newDiv3 = document.createElement("div")
-newDiv3.innerHTML = `<div id = div3 >Div 3</div>`
+newDiv3.innerHTML = `<div id = "div3">Div 3</div>`
 document.body.appendChild(newDiv3)
 
 let newFooter = document.createElement("footer")
-newFooter.innerHTML = `<footer>Footer <a id = aFooter href= "header.html">Inicio</a></footer>`
-document.body.appendChild(newFooter)
+newFooter.innerHTML = `<footer>Footer <a id = "aFooter" href= "header.html">Inicio</a></footer>`
+document.body.appendChild(newFooter)*/
 
 
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Alimentación Alfonso</h1></header>
+    <main>
+        <div id="container">
+        <div>
+            <h2><img src="/Users/AnaE/Desktop/JavaScriptCice/8-Eventos/9_-_Ejercicios_JavaScript_Eventos/iconos/carne.png" width="50px"/>Carne: 2.25€</h2>
+            <button type="button" onclick="modificar('+','carne')">+</button>
+            <button type="button" onclick="modificar('-','carne')">-</button></div>
+        <div><h2><img src="/Users/AnaE/Desktop/JavaScriptCice/8-Eventos/9_-_Ejercicios_JavaScript_Eventos/iconos/manzana.png" width="50px"/>Manzana: 1.23€</h2>
+            <button type="button" onclick="modificar('+','manzana')">+</button>
+            <button type="button"onclick="modificar('-','manzana')">-</button></div>
+        <div><h2><img src="/Users/AnaE/Desktop/JavaScriptCice/8-Eventos/9_-_Ejercicios_JavaScript_Eventos/iconos/leche.png" width="50px"/>Leche: 0.98€</h2>
+            <button type="button" onclick="modificar('+','leche')">+</button>
+            <button type="button" onclick="modificar('-','leche')">-</button></div>
+        <div><h2><img src="/Users/AnaE/Desktop/JavaScriptCice/8-Eventos/9_-_Ejercicios_JavaScript_Eventos/iconos/pescado.png" width="50px"/> 1.45€</h2>
+            <button type="button" onclick="modificar('+','pescado')">+</button>
+            <button type="button" onclick="modificar('-','pescado')">-</button></div>
+        </div>
+
+        <div>
+            <h2 id="cesta">Cesta:</h2>
+        </div>
+
+    </main>
+    <footer>
+        <p>2022 Alimentación Alfonso</p>
+    </footer>
+    <script src="Ejercicio8.3.js"></script>
+</body>
+</html>
+
+

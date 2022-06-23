@@ -14,14 +14,14 @@ ternario.-->
  <script>
 let nombre = window.prompt("Introduce tu nombre")
 let edad = parseInt(window.prompt("Introduce tu edad")) 
-let newP  = document.createElement("p")
-let newP2 = document.createElement("p")
+let newDiv  = document.createElement("div")
+let newDiv2 = document.createElement("div")
 
-newP.innerHTML = `<p> Hola ${nombre}, eres mayor de edad`
-newP2.innerHTML = `<p> Hola ${nombre}, eres menor de edad`
+newDiv.innerHTML = `<div> Hola ${nombre}, eres mayor de edad</div>`
+newDiv2.innerHTML = `<div> Hola ${nombre}, eres menor de edad</div>`
 edad >= 18
-? document.body.appendChild(newP)
-: document.body.appendChild(newP2)
+? document.body.appendChild(newDiv)
+: document.body.appendChild(newDiv2)
  </script>   
 </body>
 </html>
