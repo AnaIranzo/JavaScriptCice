@@ -1132,7 +1132,8 @@ for (let i = 0; i < personas.length; i++) {
     telefono: personas[i].cell,
     usuario: personas[i].login.username,
     localizacion: personas[i].location.country
-  })}
+  })
+}
 
 
 

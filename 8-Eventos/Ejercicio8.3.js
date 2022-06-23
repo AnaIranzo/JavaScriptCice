@@ -37,6 +37,7 @@ function cesta() {
            carnePic += `<img src ="/Users/AnaE/Desktop/JavaScriptCice/8-Eventos/9_-_Ejercicios_JavaScript_Eventos/iconos/carne.png" width="50px" `
              }
         impresion += `<h5>Carne</h5><p>${carne}${carnePic}</p>`}
+        
     if (leche >0){
         let lechePic = ""
         for (let i = 0; i < leche; i++) {
