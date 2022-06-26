@@ -1136,7 +1136,7 @@ for (let i = 0; i < personas.length; i++) {
 }
 
 
-
+console.log(personasFinal)
 
 let input = ""
 let impresion = ""
@@ -1156,10 +1156,10 @@ function buscar() {
        
 }
 
-} 
+} let respuesta = ""
 respuesta.innerHTML = impresion
 }
 
-function actualizar(e) {
-    input = e.target.value
+function actualizar(event) {
+    input = event.target.value
 }

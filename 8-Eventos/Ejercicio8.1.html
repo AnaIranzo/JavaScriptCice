@@ -18,11 +18,14 @@ tarjeta por el color de ese pais.
 /* Add shadows to create the "card" effect */
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
+
+
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 
 /* Add some padding inside the card container */
@@ -31,6 +34,7 @@ padding: 2px 16px;
 display: flex;
 align-items: center;
 justify-content: center;
+margin: auto;
 }
   </style>
 </head>
@@ -95,47 +99,43 @@ paisesFinal.push(buscarPaises(pais3,pais2,pais1))
 
 if (paisesFinal.length === 3) {
   let impresion =""
-  for (let paisBueno in paisesFinal) {
+  for (const paisBueno in paisesFinal) {
   impresion +=
    `
-    <div id="${paisBueno.pais}" class = "card">
-    <img src="${paisBueno.bandera}" alt="${paisBueno.pais}"/>
-    <h3>${paisBueno.pais}</h3>
-    <p>Población${paisBueno.poblacion}</p>
-    <p>Superficie${paisBueno.superficie}</p>
-    <buttom id = "${paisBueno.pais+"buttom"}" type = "buttom">ClickMe!</buttom>
+    <div id="${paisesFinal[paisBueno].pais}" class = "card">
+    <img src="${paisesFinal[paisBueno].bandera}" alt="${paisesFinal[paisBueno].pais}"/>
+    <h3>${paisesFinal[paisBueno].pais}</h3>
+    <p>Población${paisesFinal[paisBueno].poblacion}</p>
+    <p>Superficie${paisesFinal[paisBueno].superficie}</p>
+    <buttom id = "${paisesFinal[paisBueno].pais+"buttom"}" type = "buttom">ClickMe!</buttom>
     </div>`
       
-    }
+  }
     let div = document.createElement("div")
     div.classList.add("container")
     div.innerHTML = (impresion)
     document.body.appendChild(div)
 
-for (const paisBueno in paisesFinal) {
+  for (const paisBueno in paisesFinal) {
  
-  document.getElementById(paisBueno.pais + "buttom").addEventListener("click", ()=>{document.getElementById(paisBueno.pais).style.backgroundColor = paisBueno.color})
+  document.getElementById(paisesFinal[paisBueno].pais + "buttom").addEventListener("click", ()=>{document.getElementById(paisesFinal[paisBueno].pais).style.backgroundColor = paisesFinal[paisBueno].color})
     
-   }
+  }
 
-  
-
-  } else {
+} else {
     let h1 = document.createElement("p")
     h1.innerText = `Tienes que elegir tres paises únicos de la lista`
     document.body.appendChild(h1)
-  }
-  function buscarPaises(country1,country2,country3) {
-  for (let entrada in paises) {
+}
+ 
 
-   
-
-    if (( [entrada].pais === country1 && country1 !== country2 && country1 !== country3)) {
-      return entrada
-    }
-      
+function buscarPaises(country1,country2,country3) {
+  for (const entrada in paises) {
+    if ((paises[entrada].pais === country1 && country1 !== country2 && country1 !== country3)) {
+      return paises[entrada]
     }
   }
+}
 
 /*
 let encontrado = false
