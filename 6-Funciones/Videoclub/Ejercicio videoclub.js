@@ -123,6 +123,7 @@ for (let i = 0; i < videoclub.peliculas.length; i++) {
     
 }
 document.getElementById("container").innerHTML = impresion
+
 function mostrarPeliculas (pelicula, indice) {
     return`<div id ="card"><h3>${pelicula.titulo}</h3>
     <img scr="${pelicula.cartel}" alt ="${pelicula.titulo}" >
