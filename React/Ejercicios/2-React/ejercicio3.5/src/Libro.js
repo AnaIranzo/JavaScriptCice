@@ -16,7 +16,7 @@ function Libro(props) {
             <div>
                 <p>{stock >0 ? "Stock: " + stock : "No queda Stock" }</p>
                 
-                <button onClick={()=>( setStock(stock -1) )}>Comprar</button>
+                {stock>0 ?<button onClick={()=>( setStock(stock -1) )}>Comprar</button> : ""}
             </div>
          </div>
         
