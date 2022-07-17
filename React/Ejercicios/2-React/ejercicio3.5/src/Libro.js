@@ -1,4 +1,4 @@
-import {useState} from "react"
+import { useState } from "react"
 
 function Libro(props) {
     let [stock, setStock] = useState(3);
@@ -14,9 +14,9 @@ function Libro(props) {
             <p>{props.datos.authors.map((libro)=>libro.name)}</p>
             </div>
             <div>
-                <p>{stock}</p>
+                <p>{stock >0 ? "Stock: " + stock : "No queda Stock" }</p>
                 
-                <button onClick={()=>( setStock(stock -1) )}>-</button>
+                <button onClick={()=>( setStock(stock -1) )}>Comprar</button>
             </div>
          </div>
         
