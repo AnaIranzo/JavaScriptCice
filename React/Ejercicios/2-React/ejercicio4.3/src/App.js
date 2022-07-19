@@ -1,19 +1,34 @@
 
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Cabecera from './components/Cabecera';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
 import { useState } from 'react';
 import videojuegos from './components/videojuegos';
-import Videojuego from './components/Info';
+import Videojuego from './components/Videojuego';
+import Cabecera from './components/Cabecera';
 
 function App() {
   const [catalogo] = useState(videojuegos)
   return (
-    <>
-{catalogo.map((videojuego,index)=>{
-  return (<Videojuego key={index}/>)
+  
+ <BrowserRouter>
+ <Cabecera/>
+ <Routes>
+
+  <Route path = '/'
+    element=  {catalogo.map((videojuego , index)=>{
+      return <Videojuego key={index} datos={videojuego} full={false}/>
+    })}
+    />
+
+
+{catalogo.map((videojuego , index)=>{
+      return (
+      <Route path = {'/'+ videojuego.nombre.replaceAll(' ','-') }
+        element= {<Videojuego key={index} datos={videojuego} full={true}/>}/>) 
 })}
-</>
+</Routes>
+</BrowserRouter>
 
 
   );
