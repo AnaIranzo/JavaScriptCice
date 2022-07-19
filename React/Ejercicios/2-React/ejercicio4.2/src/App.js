@@ -12,8 +12,8 @@ function App() {
 <BrowserRouter>
 <Routes>
 <Route path='/' element={<Main catalogo={catalogo}/>}/>
-{catalogo.map((pelicula,index)=>{
-  return <Route path={"/" + pelicula.titulo.replaceAll(" ","-")} element={<p>{pelicula.sinopsis}</p>}/>
+{catalogo.map((pelicula,inde)=>{
+  return <Route path={"/" + pelicula.titulo.replaceAll(" ","-")} element={<Pelicula full={true} cartel={pelicula.cartel} titulo={pelicula.titulo} sinopsis={pelicula.sinopsis}/>}/>
 })}
 
 </Routes>

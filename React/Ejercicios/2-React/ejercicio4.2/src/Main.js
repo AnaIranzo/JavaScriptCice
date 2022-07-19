@@ -4,7 +4,7 @@ function Main(props) {
     return(
       <main className='catalogo'>
         {props.catalogo.map((datos,index)=> { 
-        return <Pelicula movie={datos} key={index}/>
+        return <Pelicula movie={datos} full={false} key={index}/>
       })}
     </main>
     )
